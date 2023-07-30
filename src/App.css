@@ -1,0 +1,41 @@
+body{
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.movie-app > .row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  /* flex-wrap: nowrap; */
+}
+
+.image-container{
+  position: relative;
+  transition: transform .2s;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+   opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  background-color: #0000009b;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  text-align: center ;
+}
+
+.bi-heart-fill{
+  margin-left: .3rem;
+}
